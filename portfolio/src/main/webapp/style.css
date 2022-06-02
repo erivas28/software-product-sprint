@@ -35,6 +35,33 @@ section {
     padding: 3rem 18rem;
 }
 
+/* Target section class */
+.section {
+    transform: translateY(-100%) scale(0);
+    transition: all 1.2s ease-in-out;
+    background-color: #222629;
+}
+
+/* Target section 1 */
+.s1 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+/* Target section 2 */
+.s2 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+/* Target section 3 */
+.s3 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+
+
 
 /* #content {
   margin-left: auto;
