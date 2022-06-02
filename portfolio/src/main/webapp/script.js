@@ -12,18 +12,3 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addInterestingFact() {
-  const facts =
-      ['Coco is my childhood nickname', 'My son is named Ezra, my daughter is named Eden', 'I like beer...',
-    'Currently grinding Apex Legends', 'I am typically always dancing when I go out', 'Hot Cheetos and Squirt soda'];
-
-  // Pick a random greeting.
-  const fact = facts[Math.floor(Math.random() * facts.length)];
-
-  // Add it to the page.
-  const factContainer = document.getElementById('fact-container');
-  factContainer.innerText = fact;
-}
