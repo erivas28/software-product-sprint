@@ -13,6 +13,27 @@ body {
     transition: all 1.1s ease-in-out;
 }
 
+header {
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222629;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+}
 
 
 /* #content {
