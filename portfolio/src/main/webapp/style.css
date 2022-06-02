@@ -60,7 +60,39 @@ section {
     transform: translateY(0) scale(1);
 }
 
+/* Target controls */
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
 
+}
+
+.control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #61892F;
+    width: 55px;
+    height: 55px;
+    border-radius: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: #fff;
+
+}
+
+i {
+    font-size: 1.2rem;
+    color: #fff;
+}
 
 
 /* #content {
