@@ -35,6 +35,7 @@ section {
     padding: 3rem 18rem;
 }
 
+
 /* Target section class */
 .section {
     transform: translateY(-100%) scale(0);
@@ -74,7 +75,7 @@ section {
 
 }
 
-.control {
+.controls .control {
     padding: 1rem;
     cursor: pointer;
     background-color: #61892F;
@@ -89,11 +90,19 @@ section {
 
 }
 
-i {
+.controls .control i {
     font-size: 1.2rem;
-    color: #fff;
+    color: #ccd1d4;
 }
 
+.controls .active-btn {
+    background-color: #86C232 !important;
+    transition: all 0.6s ease-in-out;
+}
+
+.controls .active-btn i {
+    color: #fff !important;
+}
 
 /* #content {
   margin-left: auto;
