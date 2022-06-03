@@ -40,25 +40,33 @@ section {
 .section {
     transform: translateY(-100%) scale(0);
     transition: all 1.2s ease-in-out;
-    background-color: #222629;
+    background-color: #E3E2DF;
 }
 
 /* Target section 1 */
 .s1 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #E3E2DF;
 }
 
 /* Target section 2 */
 .s2 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #9A1750;
 }
 
 /* Target section 3 */
 .s3 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: #E3AFBC;
+}
+
+/* Add effect here for clicking sections */
+.active {
+    display: block;
 }
 
 /* Target controls */
@@ -104,6 +112,7 @@ section {
 .controls .active-btn i {
     color: #fff;
 }
+
 
 /* #content {
   margin-left: auto;
