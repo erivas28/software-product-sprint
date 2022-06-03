@@ -15,7 +15,7 @@ body {
 
 header {
     height: 100vh;
-    color: #fff;
+    color: #000;
     overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ section {
 /* Target section class */
 .section {
     transform: translateY(-100%) scale(0);
-    transition: all 1.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: #E3E2DF;
 }
 
@@ -117,6 +117,28 @@ section {
     height: 100%; 
 }
 
+.header-content .left-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12rem;
+}
+
+.header-content .left-header .name {
+    font-size: 4rem;
+}
+
+.header-content .left-header .name span {
+    color: #9A1750;
+}
+
+.header-content .left-header p {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: #9A1750;
+}
+
 .header-content .right-header {
     display: flex;
     align-items: center;
@@ -125,7 +147,7 @@ section {
 
 .header-content .right-header .header-shape {
     transition: all 0.4s ease-in-out;
-    width: 65%;
+    width: 55%;
     height: 100%;
     background-color: #5D001E;
     position: absolute;
