@@ -7,9 +7,9 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    background-color: #222629;
+    background-color: #E3E2DF;
     font-size: 1.1rem;
-    color: #fff;
+    color: #000;
     transition: all 1.1s ease-in-out;
 }
 
@@ -78,7 +78,7 @@ section {
 .controls .control {
     padding: 1rem;
     cursor: pointer;
-    background-color: #61892F;
+    background-color: #E3AFBC;
     width: 55px;
     height: 55px;
     border-radius: 80%;
@@ -92,16 +92,17 @@ section {
 
 .controls .control i {
     font-size: 1.2rem;
-    color: #ccd1d4;
+    color: #E3E2DF;
+    pointer-events: none;
 }
 
 .controls .active-btn {
-    background-color: #86C232 !important;
+    background-color: #9A1750;
     transition: all 0.6s ease-in-out;
 }
 
 .controls .active-btn i {
-    color: #fff !important;
+    color: #fff;
 }
 
 /* #content {
