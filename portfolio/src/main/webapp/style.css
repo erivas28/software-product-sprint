@@ -171,6 +171,52 @@ section {
     transform: translateX(356px) translateY(110px);
 }
 
+.main-title {
+    text-align: center;
+}
+
+.main-title h2 {
+    position: relative;
+    font-size: 4.6rem;
+    font-weight: 800;
+}
+
+.main-title h2 span {
+    color: #9A1750;
+}
+
+.main-title h2 .bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #E3AFBC;
+    transition: all .4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 6.3rem;
+    opacity: 0.4;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 7.5rem;
+    padding-bottom: 4rem;
+}
+
+.about-content .left-side {
+    padding-right: 5rem;
+}
+
+.about-content .left-side p {
+    line-height: 2rem;
+    padding: 1rem;
+    color: #000;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+}
+
 /* #content {
   margin-left: auto;
   margin-right: auto;
