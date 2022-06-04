@@ -217,6 +217,78 @@ section {
     font-size: 1.2rem;
 }
 
+.about-content .right-side .about-stats .progress-bars {
+    display: grid;
+    gap: 2rem;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar {
+    display: flex;
+    flex-direction: column;
+    color: #5D001E;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-title {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress {
+    height: 0.45rem;
+    width: 100%;
+    background-color: #E3AFBC;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-color: #9A1750;
+    transition: all .4s ease-in-out;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .cpp {
+    width: 90%;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .python {
+    width: 75%;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .java {
+    width: 65%;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .css {
+    width: 70%;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .html {
+    width: 65%;
+}
+
+.about-content .right-side .about-stats .progress-bars .progress-bar .progress-content .progress .javascript {
+    width: 60%;
+}
+
+.stats-title {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+}
+
 /* #content {
   margin-left: auto;
   margin-right: auto;
