@@ -4,16 +4,211 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1fa6647b90.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js"></script>
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+  <body class="main-content">
+      <header class="section s1 header active" id="home">
+          <div class="header-content">
+              <div class="left-header">
+                  <h1 class="name">
+                      Hola, I'm <span>Eric Rivas</span>
+                      Software Developer
+                  </h1>
+                  <p>
+                      Computer Engineer seeking New Grad Roles for 2023 in Software Development
+                  </p>
+              </div>
+              <div class="right-header">
+                  <div class="header-shape"></div>
+                  <div class="image">
+                      <img src="./images/selfie_solid2.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </header>
+      <main>
+          <section class="section s2 about" id="about">
+              <div class="main-title">
+                  <h2>About <span>Me</span><span class="bg-text">Sobre Mí</span></h2>
+              </div>
+              <div class="about-content">
+                  <div class="left-side">
+                      <p>
+                        I am currently a Computer Engineering student, looking to go into Software Development and apply
+                        the knowledge and skills I have learned to provide a positive impact.
+                      </p>
+                      <p>
+                        I consider myself to be confident in the work that I provide, naturally curious to learn, and always
+                        working on ways to improve my skillset through challenging and diverse projects.
+                      </p>
+                      <p>
+                        I am a firm believer in communication, and I truly enjoy working in a collaborative environment. I find 
+                        this to be a result of becoming a Father to two lovely kids. Being married and raising two kids has taught
+                        me the importance of both teamwork and communication. I hope to apply these skills throughout my life,
+                        regardless of setting!
+                      </p>
+                  </div>
+                  <div class="right-side">
+                      <div class="about-stats">
+                          <h4 class="stats-title">Skills</h4>
+                          <div class="progress-bars">
+                              <div class="progress-bar">
+                                  <p class="progress-title">C++</p>
+                                  <div class="progress-content">
+                                      <div class="progress">
+                                          <span class="cpp"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="progress-title">Python</p>
+                                <div class="progress-content">
+                                    <div class="progress">
+                                        <span class="python"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="progress-title">CSS</p>
+                                <div class="progress-content">
+                                    <div class="progress">
+                                        <span class="css"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="progress-title">Java</p>
+                                <div class="progress-content">
+                                    <div class="progress">
+                                        <span class="java"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="progress-title">HTML</p>
+                                <div class="progress-content">
+                                    <div class="progress">
+                                        <span class="html"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bars">
+                            <div class="progress-bar">
+                                <p class="progress-title">JavaScript</p>
+                                <div class="progress-content">
+                                    <div class="progress">
+                                        <span class="javascript"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Resume Here</span>
+                        <span class="btn-icon"><i class="fa-solid fa-print"></i></span>
+                    </a>
+                  </div>
+              </div>
+          </section>
+          <section class="section s3 contact" id="contact">
+              <div class="contact-content">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contáctame</span></h2>
+                </div>
+                <div class="contact-content-container">
+                    <div class="left-contact">
+                        <p>
+                            I am actively seeking New Grad opportunities for Software Development, whether they be Front-End, Back-End,
+                            or Full-Stack opportunites. I am always eager to learn in this growing industry, so nothing is particularly
+                            "new" to me, but rather a curiosity!
+                        </p>
+                        <p>
+                            Feel free to contact me on any of my social platforms for any additional questions, comments, or even if its just
+                            to have a chat!
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/ericrivas21/" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <a href="https://github.com/erivas28" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <a href="https://www.youtube.com/channel/UCuZCU4qv_DP06PRt_OB5k6A/featured" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control input-control-2">
+                                <input type="text" required placeholder="Your Name">
+                                <input type="email" required placeholder="Your Email">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="Enter Subject">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Enter Message"></textarea>
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+              </div>              
+          </section>
+      </main>
+
+      <div class="controls">
+          <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+          <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="control control-3" data-id="contact">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+      </div>
+      <script src="script.js"></script>
   </body>
+
+  <!-- <body>
+    <div id="content">
+      <h1>Hi, I'm Eric Rivas</h1>
+      <p>Computer Engineering student seeking New Grad Roles</p>
+      <h2>About Me</h2>
+      <p>
+          I truly enjoy learning new things in life, as I find them to be "curiosities". I feel 
+          like this has been helpful throughout my academic career and personal life.
+      </p>
+      <p>
+          My hobbies consist of playing soccer, spending time with my wife and kids, and smoking cigars!
+      </p>
+      <img id='selfie' src="./images/selfie_solid.png" />
+    </div>
+  </body> -->
 </html>
