@@ -341,7 +341,6 @@ section {
 }
 
 .contact-content-container .right-contact .input-control input {
-    border-radius: 30px;
     font-weight: inherit;
     font-size: inherit;
     font-family: inherit;
@@ -355,7 +354,6 @@ section {
 }
 
 .contact-content-container .right-contact .input-control textarea {
-    border-radius: 30px;
     font-weight: inherit;
     font-size: inherit;
     font-family: inherit;
@@ -366,6 +364,24 @@ section {
     width: 100%;
     color: #000;
     resize: none;
+}
+
+.contact-content-container .right-contact .input-button .flat-button {
+    color: #9A1750;
+    background: 0 0;
+    font-size: 1.1rem;
+    font-family: 'Nunito';
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #9A1750;
+    float: right;
+    border-radius: 4px;
+}
+
+.contact-content-container .right-contact .input-button .flat-button:hover {
+    background: #9A1750;
+    color: #fff;
 }
 
 /* #content {
