@@ -15,11 +15,25 @@ public class FormHandlerServlet extends HttpServlet {
     // Get the value entered in the form.
     String textValue = request.getParameter("text-input");
 
+    String nameValue = request.getParameter("name-input");
+
+    String emailValue = request.getParameter("email-input");
+
+    String subjectValue = request.getParameter("subject-input");
+
     // Print the value so you can see it in the server logs.
-    System.out.println("You submitted: " + textValue);
+    System.out.println("The message is: " + textValue);
+
+    System.out.println("The name is: " + nameValue);
+
+    System.out.println("The email is: " + emailValue);
+
+    System.out.println("The subject is: " + subjectValue);
 
     // Write the value to the response so the user can see it.
     response.getWriter().println("You submitted: " + textValue);
+    
+    response.getWriter().println("The name is: " + nameValue);
 
     response.sendRedirect("https://erivas-sps-summer22.uc.r.appspot.com/");
   }
