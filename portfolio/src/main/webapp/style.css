@@ -384,6 +384,10 @@ section {
     color: #fff;
 }
 
+.contact-content-container .right-contact {
+    flex: 3;
+    margin-left: 3rem;    
+}
 
 /* #content {
   margin-left: auto;
