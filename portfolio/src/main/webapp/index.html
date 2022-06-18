@@ -9,6 +9,58 @@
     <script src="https://kit.fontawesome.com/1fa6647b90.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <!-- Add Map -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['map'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyCLXTAy2wvpsLr78Mdhv0eZIQYrcbxs0ts'
+    });
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap () {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Address');
+      data.addColumn('string', 'Location');
+
+      data.addRows([
+        ['1609 E Cameron Ave, West Covina, CA 91791, United States', 'The High School I attended, and I currently still live in this city!']
+      ]);
+
+      var options = {
+        mapType: 'styledMap',
+        zoomLevel: 12,
+        showTooltip: true,
+        showInfoWindow: true,
+        useMapTypeControl: true,
+        maps: {
+          // Your custom mapTypeId holding custom map styles.
+          styledMap: {
+            name: 'Styled Map', // This name will be displayed in the map type control.
+            styles: [
+              {featureType: 'poi.attraction',
+               stylers: [{color: '#fce8b2'}]
+              },
+              {featureType: 'road.highway',
+               stylers: [{hue: '#0277bd'}, {saturation: -50}]
+              },
+              {featureType: 'road.highway',
+               elementType: 'labels.icon',
+               stylers: [{hue: '#000'}, {saturation: 100}, {lightness: 50}]
+              },
+              {featureType: 'landscape',
+               stylers: [{hue: '#259b24'}, {saturation: 10}, {lightness: -22}]
+              }
+        ]}}
+      };
+
+      var map = new google.visualization.Map(document.getElementById('map_div'));
+
+      map.draw(data, options);
+    }
+  </script>
   </head>
   <body class="main-content">
       <header class="section s1 header active" id="home">
@@ -139,6 +191,21 @@
                             Feel free to contact me on any of my social platforms for any additional questions, comments, or even if its just
                             to have a chat!
                         </p>
+                        <form action="/form-handler" method="POST" class="contact-form">
+                            <div class="input-control input-control-2">
+                                <input type="text" name="name-input" required placeholder="Your Name">
+                                <input type="email" name="email-input" required placeholder="Your Email">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="subject-input" required placeholder="Enter Subject">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="text-input" id="" cols="15" rows="8" required placeholder="Enter Message"></textarea>
+                            </div>
+                            <div class="input-button">
+                                <input type="submit" class="flat-button" value="SEND">
+                            </div>
+                        </form>
                         <div class="contact-info">
                             <div class="contact-item">
                                 <div class="icon">
@@ -164,21 +231,7 @@
                         </div>                        
                     </div>
                     <div class="right-contact">
-                        <form action="/form-handler" method="POST" class="contact-form">
-                            <div class="input-control input-control-2">
-                                <input type="text" name="name-input" required placeholder="Your Name">
-                                <input type="email" name="email-input" required placeholder="Your Email">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" name="subject-input" required placeholder="Enter Subject">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="text-input" id="" cols="15" rows="8" required placeholder="Enter Message"></textarea>
-                            </div>
-                            <div class="input-button">
-                                <input type="submit" class="flat-button" value="SEND">
-                            </div>
-                        </form>                        
+                        <div id="map_div" style="height: 500px; width: 900px"></div>                      
                     </div>
                 </div>
               </div>              

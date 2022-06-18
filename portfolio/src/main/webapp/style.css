@@ -323,24 +323,24 @@ section {
     font-size: 1.3rem;
 }
 
-.contact-content-container .right-contact {
+.contact-content-container .left-contact {
     flex: 3;
     margin-left: 3rem;
 }
 
-.contact-content-container .right-contact .input-control {
+.contact-content-container .left-contact .input-control {
     margin: 1.5rem 0;
 }
 
-.contact-content-container .right-contact .input-control-2 {
+.contact-content-container .left-contact .input-control-2 {
     display: flex;
 }
 
-.contact-content-container .right-contact .input-control-2 :last-child {
+.contact-content-container .left-contact .input-control-2 :last-child {
     margin-left: 1.5rem;
 }
 
-.contact-content-container .right-contact .input-control input {
+.contact-content-container .left-contact .input-control input {
     font-weight: inherit;
     font-size: inherit;
     font-family: inherit;
@@ -353,7 +353,7 @@ section {
     resize: none;
 }
 
-.contact-content-container .right-contact .input-control textarea {
+.contact-content-container .left-contact .input-control textarea {
     font-weight: inherit;
     font-size: inherit;
     font-family: inherit;
@@ -366,7 +366,7 @@ section {
     resize: none;
 }
 
-.contact-content-container .right-contact .input-button .flat-button {
+.contact-content-container .left-contact .input-button .flat-button {
     color: #9A1750;
     background: 0 0;
     font-size: 1.1rem;
@@ -379,9 +379,14 @@ section {
     border-radius: 4px;
 }
 
-.contact-content-container .right-contact .input-button .flat-button:hover {
+.contact-content-container .left-contact .input-button .flat-button:hover {
     background: #9A1750;
     color: #fff;
+}
+
+.contact-content-container .right-contact {
+    flex: 3;
+    margin-left: 3rem;    
 }
 
 /* #content {
